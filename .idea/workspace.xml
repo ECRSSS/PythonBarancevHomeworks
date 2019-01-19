@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44ad7dbc-a654-42e2-9dba-a15f247b1d9b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/contacts.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_add_contact.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groups_tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/contacts_tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_add_group.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,13 +17,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="test_add_group.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_add_group.py">
+      <file leaf-file-name="groups_tests.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/groups_tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="547">
-              <caret line="53" lean-forward="true" selection-end-line="53" />
+            <state relative-caret-position="158">
+              <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
               <folding>
-                <element signature="e#24#54#0" expanded="true" />
+                <element signature="e#25#38#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -42,20 +44,29 @@
       <file leaf-file-name="contacts.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contacts.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+            <state>
+              <caret selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_add_contact.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test_add_contact.py">
+      <file leaf-file-name="contacts_tests.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/contacts_tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="31" column="55" selection-start-line="31" selection-start-column="55" selection-end-line="31" selection-end-column="55" />
+            <state relative-caret-position="209">
+              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
               <folding>
-                <element signature="e#24#54#0" expanded="true" />
+                <element signature="e#24#37#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="663">
+              <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -86,9 +97,11 @@
       <list>
         <option value="$PROJECT_DIR$/env/groups.py" />
         <option value="$PROJECT_DIR$/groups.py" />
-        <option value="$PROJECT_DIR$/test_add_group.py" />
         <option value="$PROJECT_DIR$/contacts.py" />
         <option value="$PROJECT_DIR$/test_add_contact.py" />
+        <option value="$PROJECT_DIR$/test_add_group.py" />
+        <option value="$PROJECT_DIR$/application.py" />
+        <option value="$PROJECT_DIR$/contacts_tests.py" />
       </list>
     </option>
   </component>
@@ -133,8 +146,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.py.test for test_add_contact.TestAddContact.test_add_contact">
-    <configuration name="Twisted Trial in test_add_group.py" type="tests" factoryName="Twisted Trial" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="Twisted Trial in groups_tests.py" type="tests" factoryName="Twisted Trial" temporary="true" nameIsGenerated="true">
       <module name="PythonBarancevHomeworks" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -144,7 +157,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_add_group.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/groups_tests.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <configuration name="Unnamed" type="tests" factoryName="py.test">
@@ -158,10 +171,10 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_add_group.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/groups_tests.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
-    <configuration name="py.test for test_add_contact.TestAddContact.test_add_contact" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="py.test for contacts_tests.TestAddContact.test_add_contact" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="PythonBarancevHomeworks" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -172,18 +185,50 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_add_contact.TestAddContact.test_add_contact&quot;" />
+      <option name="_new_target" value="&quot;contacts_tests.TestAddContact.test_add_contact&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+    </configuration>
+    <configuration name="py.test for contacts_tests.test_add_contact" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="PythonBarancevHomeworks" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;contacts_tests.test_add_contact&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+    </configuration>
+    <configuration name="py.test for groups_tests.test_add_group" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="PythonBarancevHomeworks" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;groups_tests.test_add_group&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
     <list>
       <item itemvalue="Python tests.Unnamed" />
-      <item itemvalue="Python tests.Twisted Trial in test_add_group.py" />
-      <item itemvalue="Python tests.py.test for test_add_contact.TestAddContact.test_add_contact" />
+      <item itemvalue="Python tests.Twisted Trial in groups_tests.py" />
+      <item itemvalue="Python tests.py.test for contacts_tests.TestAddContact.test_add_contact" />
+      <item itemvalue="Python tests.py.test for groups_tests.test_add_group" />
+      <item itemvalue="Python tests.py.test for contacts_tests.test_add_contact" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.py.test for test_add_contact.TestAddContact.test_add_contact" />
-        <item itemvalue="Python tests.Twisted Trial in test_add_group.py" />
+        <item itemvalue="Python tests.py.test for groups_tests.test_add_group" />
+        <item itemvalue="Python tests.py.test for contacts_tests.test_add_contact" />
+        <item itemvalue="Python tests.py.test for contacts_tests.TestAddContact.test_add_contact" />
+        <item itemvalue="Python tests.Twisted Trial in groups_tests.py" />
       </list>
     </recent_temporary>
   </component>
@@ -201,15 +246,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Twisted_Trial_in_test_add_group_py - 2019.01.11 at 15h 53m 58s.xml">
-      <configuration name="Twisted Trial in test_add_group.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Twisted_Trial_in_test_add_group_py - 2019.01.11 at 15h 54m 57s.xml">
-      <configuration name="Twisted Trial in test_add_group.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Twisted_Trial_in_test_add_group_py - 2019.01.11 at 16h 09m 15s.xml">
-      <configuration name="Twisted Trial in test_add_group.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unnamed - 2019.01.11 at 16h 11m 16s.xml">
       <configuration name="Unnamed" configurationId="tests" />
     </history-entry>
@@ -230,6 +266,15 @@
     </history-entry>
     <history-entry file="py_test_for_test_add_contact_TestAddContact_test_add_contact - 2019.01.19 at 20h 13m 24s.xml">
       <configuration name="py.test for test_add_contact.TestAddContact.test_add_contact" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_for_test_add_group_test_add_group - 2019.01.19 at 21h 00m 29s.xml">
+      <configuration name="py.test for test_add_group.test_add_group" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_for_test_add_group_test_add_group - 2019.01.19 at 21h 03m 15s.xml">
+      <configuration name="py.test for test_add_group.test_add_group" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_for_contacts_tests_test_add_contact - 2019.01.19 at 21h 07m 13s.xml">
+      <configuration name="py.test for contacts_tests.test_add_contact" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -259,12 +304,12 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test_add_group.py">
+    <entry file="file://$PROJECT_DIR$/groups_tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
           <folding>
-            <element signature="e#24#54#0" expanded="true" />
+            <element signature="e#25#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -283,13 +328,6 @@
     <entry file="file://$PROJECT_DIR$/LICENSE">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/contacts.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/groups.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -297,22 +335,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_add_group.py">
+    <entry file="file://$PROJECT_DIR$/contacts.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="53" lean-forward="true" selection-end-line="53" />
+        <state>
+          <caret selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/groups_tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
           <folding>
-            <element signature="e#24#54#0" expanded="true" />
+            <element signature="e#25#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_add_contact.py">
+    <entry file="file://$PROJECT_DIR$/contacts_tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="31" column="55" selection-start-line="31" selection-start-column="55" selection-end-line="31" selection-end-column="55" />
+        <state relative-caret-position="209">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
           <folding>
-            <element signature="e#24#54#0" expanded="true" />
+            <element signature="e#24#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
