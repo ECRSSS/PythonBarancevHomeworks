@@ -14,7 +14,7 @@ class Application:
         self.groups = GroupsHelper(self)
         self.contacts = ContactsHelper(self)
 
-    def open_addressbook_page(self):
+    def open(self):
         self.wd.get("http://localhost/addressbook")
 
     def destroy(self):

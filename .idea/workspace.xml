@@ -2,22 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44ad7dbc-a654-42e2-9dba-a15f247b1d9b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fixture/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fixture/helpers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fixture/helpers/contacts_helper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fixture/helpers/group_helper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fixture/helpers/session_helper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/contacts/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/groups/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/contacts/test_modify_contact.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/contacts/test_remove_contact.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/groups/test_modify_group.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/groups/test_remove_group.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/application.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contacts.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/contacts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contacts_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/contacts/test_add_contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/groups.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/groups.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/groups_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/groups/test_add_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/application.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/helpers/contacts_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/helpers/contacts_helper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/helpers/group_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/helpers/group_helper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/contacts/test_add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/contacts/test_add_contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/groups/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/groups/test_add_group.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,35 +25,14 @@
       <file leaf-file-name="test_add_group.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/groups/test_add_group.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="conftest.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conftest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contacts.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/contacts.py">
-          <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret selection-end-column="23" />
+              <caret selection-end-line="1" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_add_contact.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/contacts/test_add_contact.py">
+      <file leaf-file-name="groups.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/groups.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
               <caret line="8" selection-start-line="8" selection-end-line="8" />
@@ -67,32 +40,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="python.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/_pytest/python.py">
+      <file leaf-file-name="test_remove_group.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/groups/test_remove_group.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="165" selection-start-line="165" selection-end-line="165" />
+            <state relative-caret-position="68">
+              <caret line="4" column="45" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fixture/application.py">
+      <file leaf-file-name="test_modify_contact.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/contacts/test_modify_contact.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-              <folding>
-                <element signature="e#24#54#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contacts_helper.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fixture/helpers/contacts_helper.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="6" selection-end-column="24" />
+            <state relative-caret-position="119">
+              <caret line="7" column="117" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="117" />
             </state>
           </provider>
         </entry>
@@ -100,23 +61,32 @@
       <file leaf-file-name="group_helper.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fixture/helpers/group_helper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+            <state relative-caret-position="34">
+              <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="session_helper.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/fixture/helpers/session_helper.py">
+      <file leaf-file-name="test_modify_group.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/groups/test_modify_group.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+            <state relative-caret-position="204">
+              <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_add_contact.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/contacts/test_add_contact.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/__init__.py">
+        <entry file="file://$PROJECT_DIR$/tests/__init__.py">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -144,12 +114,16 @@
         <option value="$PROJECT_DIR$/conftest.py" />
         <option value="$PROJECT_DIR$/groups_tests.py" />
         <option value="$PROJECT_DIR$/contacts_tests.py" />
-        <option value="$PROJECT_DIR$/fixture/helpers/contacts_helper.py" />
-        <option value="$PROJECT_DIR$/fixture/helpers/group_helper.py" />
-        <option value="$PROJECT_DIR$/tests/contacts/test_add_contact.py" />
         <option value="$PROJECT_DIR$/tests/groups/test_add_group.py" />
-        <option value="$PROJECT_DIR$/fixture/application.py" />
         <option value="$PROJECT_DIR$/fixture/helpers/session_helper.py" />
+        <option value="$PROJECT_DIR$/fixture/application.py" />
+        <option value="$PROJECT_DIR$/tests/contacts/test_remove_contact.py" />
+        <option value="$PROJECT_DIR$/fixture/helpers/contacts_helper.py" />
+        <option value="$PROJECT_DIR$/tests/contacts/test_modify_contact.py" />
+        <option value="$PROJECT_DIR$/tests/contacts/test_add_contact.py" />
+        <option value="$PROJECT_DIR$/tests/groups/test_remove_group.py" />
+        <option value="$PROJECT_DIR$/fixture/helpers/group_helper.py" />
+        <option value="$PROJECT_DIR$/tests/groups/test_modify_group.py" />
       </list>
     </option>
   </component>
@@ -171,6 +145,39 @@
             <path>
               <item name="PythonBarancevHomeworks" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonBarancevHomeworks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonBarancevHomeworks" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonBarancevHomeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="fixture" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonBarancevHomeworks" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonBarancevHomeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="fixture" type="462c0819:PsiDirectoryNode" />
+              <item name="helpers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonBarancevHomeworks" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonBarancevHomeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonBarancevHomeworks" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonBarancevHomeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonBarancevHomeworks" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonBarancevHomeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="contacts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonBarancevHomeworks" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonBarancevHomeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="groups" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -203,7 +210,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.py.test in tests">
+  <component name="RunManager" selected="Python tests.py.test in groups">
     <configuration name="Unnamed" type="tests" factoryName="py.test">
       <module name="PythonBarancevHomeworks" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -218,7 +225,7 @@
       <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/groups/test_add_group.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
-    <configuration name="py.test for test_add_contact.test_add_contact" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="py.test for test_modify_contact.test_modify_contact" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="PythonBarancevHomeworks" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -229,80 +236,80 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_add_contact.test_add_contact&quot;" />
+      <option name="_new_target" value="&quot;test_modify_contact.test_modify_contact&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="py.test for tests.contacts.test_add_contact.test_add_contact" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="py.test for test_modify_group.test_modify_group" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="PythonBarancevHomeworks" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/groups" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.contacts.test_add_contact.test_add_contact&quot;" />
+      <option name="_new_target" value="&quot;test_modify_group.test_modify_group&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="py.test for tests.groups.test_add_group.test_add_group" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="py.test for test_remove_group.test_remove_group" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="PythonBarancevHomeworks" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/groups" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.groups.test_add_group.test_add_group&quot;" />
+      <option name="_new_target" value="&quot;test_remove_group.test_remove_group&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="py.test in test_add_contact.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="py.test in contacts" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="PythonBarancevHomeworks" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/contacts" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/contacts/test_add_contact.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/contacts&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
-    <configuration name="py.test in tests" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="py.test in groups" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="PythonBarancevHomeworks" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/groups" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/groups&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <list>
       <item itemvalue="Python tests.Unnamed" />
-      <item itemvalue="Python tests.py.test for tests.groups.test_add_group.test_add_group" />
-      <item itemvalue="Python tests.py.test for tests.contacts.test_add_contact.test_add_contact" />
-      <item itemvalue="Python tests.py.test in test_add_contact.py" />
-      <item itemvalue="Python tests.py.test in tests" />
-      <item itemvalue="Python tests.py.test for test_add_contact.test_add_contact" />
+      <item itemvalue="Python tests.py.test for test_modify_contact.test_modify_contact" />
+      <item itemvalue="Python tests.py.test in contacts" />
+      <item itemvalue="Python tests.py.test in groups" />
+      <item itemvalue="Python tests.py.test for test_remove_group.test_remove_group" />
+      <item itemvalue="Python tests.py.test for test_modify_group.test_modify_group" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.py.test in tests" />
-        <item itemvalue="Python tests.py.test for test_add_contact.test_add_contact" />
-        <item itemvalue="Python tests.py.test in test_add_contact.py" />
-        <item itemvalue="Python tests.py.test for tests.groups.test_add_group.test_add_group" />
-        <item itemvalue="Python tests.py.test for tests.contacts.test_add_contact.test_add_contact" />
+        <item itemvalue="Python tests.py.test in groups" />
+        <item itemvalue="Python tests.py.test for test_modify_group.test_modify_group" />
+        <item itemvalue="Python tests.py.test for test_remove_group.test_remove_group" />
+        <item itemvalue="Python tests.py.test in contacts" />
+        <item itemvalue="Python tests.py.test for test_modify_contact.test_modify_contact" />
       </list>
     </recent_temporary>
   </component>
@@ -320,35 +327,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="py_test_in_contacts_tests_py - 2019.01.20 at 17h 55m 12s.xml">
-      <configuration name="py.test in contacts_tests.py" configurationId="tests" />
+    <history-entry file="py_test_in_contacts - 2019.01.20 at 19h 51m 07s.xml">
+      <configuration name="py.test in contacts" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_tests - 2019.01.20 at 17h 57m 36s.xml">
-      <configuration name="py.test in tests" configurationId="tests" />
+    <history-entry file="py_test_in_contacts - 2019.01.20 at 19h 52m 10s.xml">
+      <configuration name="py.test in contacts" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_for_test_add_contact_test_add_contact - 2019.01.20 at 18h 14m 55s.xml">
-      <configuration name="py.test for test_add_contact.test_add_contact" configurationId="tests" />
+    <history-entry file="py_test_in_groups - 2019.01.20 at 19h 56m 47s.xml">
+      <configuration name="py.test in groups" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_tests - 2019.01.20 at 18h 16m 02s.xml">
-      <configuration name="py.test in tests" configurationId="tests" />
+    <history-entry file="py_test_for_test_remove_group_test_remove_group - 2019.01.20 at 20h 05m 16s.xml">
+      <configuration name="py.test for test_remove_group.test_remove_group" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_tests - 2019.01.20 at 18h 16m 31s.xml">
-      <configuration name="py.test in tests" configurationId="tests" />
+    <history-entry file="py_test_for_test_remove_group_test_remove_group - 2019.01.20 at 20h 05m 47s.xml">
+      <configuration name="py.test for test_remove_group.test_remove_group" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_tests - 2019.01.20 at 18h 17m 21s.xml">
-      <configuration name="py.test in tests" configurationId="tests" />
+    <history-entry file="py_test_for_test_remove_group_test_remove_group - 2019.01.20 at 20h 06m 08s.xml">
+      <configuration name="py.test for test_remove_group.test_remove_group" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_tests - 2019.01.20 at 18h 18m 47s.xml">
-      <configuration name="py.test in tests" configurationId="tests" />
+    <history-entry file="py_test_for_test_remove_group_test_remove_group - 2019.01.20 at 20h 07m 02s.xml">
+      <configuration name="py.test for test_remove_group.test_remove_group" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_tests - 2019.01.20 at 18h 20m 29s.xml">
-      <configuration name="py.test in tests" configurationId="tests" />
+    <history-entry file="py_test_for_test_modify_group_test_modify_group - 2019.01.20 at 20h 15m 12s.xml">
+      <configuration name="py.test for test_modify_group.test_modify_group" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_tests - 2019.01.20 at 18h 21m 09s.xml">
-      <configuration name="py.test in tests" configurationId="tests" />
+    <history-entry file="py_test_for_test_modify_group_test_modify_group - 2019.01.20 at 20h 15m 27s.xml">
+      <configuration name="py.test for test_modify_group.test_modify_group" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_tests - 2019.01.20 at 18h 22m 14s.xml">
-      <configuration name="py.test in tests" configurationId="tests" />
+    <history-entry file="py_test_in_groups - 2019.01.20 at 20h 15m 52s.xml">
+      <configuration name="py.test in groups" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -403,36 +410,8 @@
     <entry file="file://$PROJECT_DIR$/LICENSE">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/groups.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fixture/helpers/group_helper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fixture/helpers/contacts_helper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="6" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/contacts.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="23" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/conftest.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -441,30 +420,6 @@
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fixture/application.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-          <folding>
-            <element signature="e#24#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/groups/test_add_group.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/contacts/test_add_contact.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -478,7 +433,90 @@
     <entry file="file://$PROJECT_DIR$/fixture/helpers/session_helper.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixture/application.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="e#24#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/contacts/test_remove_contact.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/contacts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixture/helpers/contacts_helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/groups/test_add_group.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/groups.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/groups/test_remove_group.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="45" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/contacts/test_modify_contact.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="117" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/contacts/test_add_contact.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixture/helpers/group_helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/groups/test_modify_group.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
         </state>
       </provider>
     </entry>
