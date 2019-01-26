@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from selenium.webdriver.common.by import By
 
 
 class ContactsHelper:
@@ -30,6 +31,7 @@ class ContactsHelper:
         checkbox.click()
         self.wd.find_element_by_xpath("//input[contains(@value,'Delete')]").click()
         self.wd.switch_to.alert.accept()
+        self.wd.visibility_of_element_located(By.XPATH(), "//*[text()='Record successful deleted']")
 
     def modify_contact_by_num_on_page(self, contact, num):
         self.wd.find_elements_by_xpath("//img[contains(@title,'Edit')]/..")[num].click()
