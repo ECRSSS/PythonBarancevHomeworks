@@ -19,3 +19,9 @@ class Application:
 
     def destroy(self):
         self.wd.quit()
+
+    def fill_field_by_name(self, name, text):
+        if text is not None:
+            e = self.wd.find_element_by_name(name)
+            e.clear()
+            e.send_keys(text)
