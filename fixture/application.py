@@ -9,7 +9,7 @@ from fixture.helpers.session_helper import SessionHelper
 class Application:
     def __init__(self):
         self.wd = webdriver.Firefox()
-        self.wd.implicitly_wait(10)
+        self.wd.implicitly_wait(3)
         self.session = SessionHelper(self)
         self.groups = GroupsHelper(self)
         self.contacts = ContactsHelper(self)

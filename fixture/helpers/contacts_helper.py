@@ -36,3 +36,14 @@ class ContactsHelper:
         self.wd.find_elements_by_xpath("//img[contains(@title,'Edit')]/..")[num].click()
         self.type_contact(contact)
         self.update()
+
+    def count(self):
+        return len(self.wd.find_elements_by_name("selected[]"))
+
+    def create_contact_if_not_exist(self, contact):
+        if self.count() == 0:
+            self.add_new_contact(contact)
+
+    def to_contacts(self):
+        self.wd.get("http://localhost/addressbook")
+        self.wd.find_element_by_xpath("//a[text()='home']").click()

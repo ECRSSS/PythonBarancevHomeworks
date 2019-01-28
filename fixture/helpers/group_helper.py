@@ -2,7 +2,7 @@
 
 
 class GroupsHelper:
-    def __init__(self,app):
+    def __init__(self, app):
         self.app = app
         self.wd = app.wd
 
@@ -18,11 +18,12 @@ class GroupsHelper:
         self.wd.find_element_by_name("update").click()
 
     def to_groups(self):
-        self.wd.find_element_by_xpath("//a[text()='groups']").click()
+        self.wd.get("http://localhost/addressbook/group.php")
 
     def add_new_group(self, group):
         self.wd.find_element_by_name("new").click()
         self.type_group(group)
+        self.submit()
         self.to_groups()
 
     def select_group_by_num_on_page(self, num):
@@ -31,9 +32,15 @@ class GroupsHelper:
     def delete(self):
         self.wd.find_element_by_name("delete").click()
 
-    def modify(self,group):
+    def modify(self, group):
         self.wd.find_element_by_name("edit").click()
         self.type_group(group)
         self.update()
 
+    def count(self):
+        return len(self.wd.find_elements_by_name("selected[]"))
 
+    def create_group_if_not_exist(self, group):
+        self.to_groups()
+        if self.count() == 0:
+            self.add_new_group(group)
