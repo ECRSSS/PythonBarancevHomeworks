@@ -31,7 +31,9 @@ class GroupsHelper:
     def delete(self):
         self.wd.find_element_by_name("delete").click()
 
-    def modify(self):
+    def modify(self,group):
         self.wd.find_element_by_name("edit").click()
+        self.type_group(group)
+        self.update()
 
 
