@@ -17,14 +17,12 @@ class GroupsHelper:
     def update(self):
         self.wd.find_element_by_name("update").click()
 
-    def to_groups(self):
-        self.wd.get("http://localhost/addressbook/group.php")
 
     def add_new_group(self, group):
         self.wd.find_element_by_name("new").click()
         self.type_group(group)
         self.submit()
-        self.to_groups()
+        self.app.navigation.to_groups()
 
     def select_group_by_num_on_page(self, num):
         self.wd.find_elements_by_xpath("//span/input")[num].click()
@@ -41,6 +39,6 @@ class GroupsHelper:
         return len(self.wd.find_elements_by_name("selected[]"))
 
     def create_group_if_not_exist(self, group):
-        self.to_groups()
+        self.app.navigation.to_groups()
         if self.count() == 0:
             self.add_new_group(group)

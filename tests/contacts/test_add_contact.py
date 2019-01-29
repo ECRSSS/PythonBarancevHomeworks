@@ -2,5 +2,5 @@
 from model.contacts import Contact
 
 def test_add_contact(app):
-    app.contacts.to_contacts()
+    app.navigation.to_contacts()
     app.contacts.add_new_contact(Contact("first name", "middle name", "last name"))
