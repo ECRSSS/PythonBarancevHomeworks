@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from model.groups import Group
 
 
 class GroupsHelper:
@@ -17,6 +18,14 @@ class GroupsHelper:
     def update(self):
         self.wd.find_element_by_name("update").click()
 
+    def get_groups(self):
+        groups_elements = self.wd.find_elements_by_xpath("//span[@class='group']")
+        groups = list()
+        for element in groups_elements:
+            group_id = element.find_element_by_css_selector("input").get_attribute("value")
+            group_name = element.text
+            groups.append(Group(group_name, None, None, group_id))
+        return groups
 
     def add_new_group(self, group):
         self.wd.find_element_by_name("new").click()

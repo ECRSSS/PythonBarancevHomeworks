@@ -4,11 +4,8 @@ class NavigationHelper:
         self.wd = app.wd
 
     def to_contacts(self):
-        if not self.wd.current_url.endswith("addressbook/") \
-                and self.wd.find_elements_by_xpath("//input[@value='Send e-Mail']") == 0:
-            self.wd.find_element_by_xpath("//a[text()='home']").click()
+        if not self.wd.current_url.endswith("addressbook/"):
+            self.wd.get("http://localhost/addressbook/")
 
     def to_groups(self):
-        if not self.wd.current_url.endswith("/group.php") \
-                and self.wd.find_elements_by_xpath("//input[@value='New group']") == 0:
-            self.wd.find_element_by_xpath("//a[text()='groups']").click()
+        self.wd.get("http://localhost/addressbook/group.php")
