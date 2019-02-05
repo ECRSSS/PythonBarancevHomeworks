@@ -14,18 +14,25 @@ class GroupsHelper:
 
     def submit(self):
         self.wd.find_element_by_name("submit").click()
+        self.groups_cache = None
 
     def update(self):
         self.wd.find_element_by_name("update").click()
+        self.groups_cache = None
+
+    groups_cache = None
 
     def get_groups(self):
-        groups_elements = self.wd.find_elements_by_xpath("//span[@class='group']")
-        groups = list()
-        for element in groups_elements:
-            group_id = element.find_element_by_css_selector("input").get_attribute("value")
-            group_name = element.text
-            groups.append(Group(group_name, None, None, group_id))
-        return groups
+        if self.groups_cache is None:
+            groups_elements = self.wd.find_elements_by_xpath("//span[@class='group']")
+            self.groups_cache = list()
+            for element in groups_elements:
+                group_id = element.find_element_by_css_selector("input").get_attribute("value")
+                group_name = element.text
+                self.groups_cache.append(Group(group_name, None, None, group_id))
+            return list(self.groups_cache)
+        else:
+            return list(self.groups_cache)
 
     def add_new_group(self, group):
         self.wd.find_element_by_name("new").click()
@@ -38,6 +45,7 @@ class GroupsHelper:
 
     def delete(self):
         self.wd.find_element_by_name("delete").click()
+        self.groups_cache = None
 
     def modify(self, group):
         self.wd.find_element_by_name("edit").click()
