@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
-from random import randrange
-
 from model.contacts import Contact
-from utils.utils import list_sort
+from utils.utils import list_sort, get_random_index_from_list
 
 
 def test_modify_contact(app):
@@ -10,7 +8,7 @@ def test_modify_contact(app):
     app.contacts.create_contact_if_not_exist(Contact("TestFirstName", "TestMiddleName", "TestLastName", None))
     app.navigation.to_contacts()
     old_contacts = app.contacts.get_contacts()
-    index = randrange(len(old_contacts))
+    index = get_random_index_from_list(old_contacts)
     modified_contact = Contact("ModifiedFirstName", "ModifiedMiddleName", "ModifiedLastName", None)
     app.contacts.modify_contact_by_num_on_page(modified_contact, index)
     app.navigation.to_contacts()

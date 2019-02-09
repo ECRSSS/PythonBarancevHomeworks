@@ -14,7 +14,7 @@ class Contact:
                and self.middle_name == o.middle_name and self.first_name == o.first_name and self.last_name == o.last_name
 
     def __repr__(self):
-        return str(self.elm_id) + " " + self.first_name + " " + self.middle_name + " " + self.last_name
+        return str(self.elm_id) + " " + str(self.first_name) + " " + str(self.middle_name) + " " + str(self.last_name)
 
     def __lt__(self, other):
         return self.elm_id < other.elm_id
