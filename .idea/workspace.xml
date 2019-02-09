@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44ad7dbc-a654-42e2-9dba-a15f247b1d9b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/contacts/test_check_contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/helpers/contacts_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/helpers/contacts_helper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/contacts/test_add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/contacts/test_add_contact.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/utils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,11 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_add_contact.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test_add_contact.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/contacts/test_add_contact.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="32" />
+              <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
               <folding>
                 <element signature="e#24#58#0" expanded="true" />
               </folding>
@@ -69,7 +67,7 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="test_check_contact.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test_check_contact.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/contacts/test_check_contact.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
@@ -93,8 +91,8 @@
       <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="25" column="14" lean-forward="true" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+            <state relative-caret-position="102">
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="17" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -135,7 +133,6 @@
         <option value="$PROJECT_DIR$/fixture/helpers/session_helper.py" />
         <option value="$PROJECT_DIR$/fixture/application.py" />
         <option value="$PROJECT_DIR$/tests/debug_test.py" />
-        <option value="$PROJECT_DIR$/tests/contacts/test_add_contact.py" />
         <option value="$PROJECT_DIR$/tests/contacts/debug_test.py" />
         <option value="$PROJECT_DIR$/model/groups.py" />
         <option value="$PROJECT_DIR$/tests/groups/test_add_group.py" />
@@ -146,9 +143,10 @@
         <option value="$PROJECT_DIR$/tests/groups/test_remove_group.py" />
         <option value="$PROJECT_DIR$/tests/contacts/test_modify_contact.py" />
         <option value="$PROJECT_DIR$/tests/contacts/test_remove_contact.py" />
-        <option value="$PROJECT_DIR$/utils/utils.py" />
         <option value="$PROJECT_DIR$/fixture/helpers/contacts_helper.py" />
         <option value="$PROJECT_DIR$/tests/contacts/test_check_contact.py" />
+        <option value="$PROJECT_DIR$/utils/utils.py" />
+        <option value="$PROJECT_DIR$/tests/contacts/test_add_contact.py" />
       </list>
     </option>
   </component>
@@ -201,6 +199,12 @@
             <path>
               <item name="PythonBarancevHomeworks" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonBarancevHomeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="groups" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonBarancevHomeworks" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonBarancevHomeworks" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -234,7 +238,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.py.test for test_check_contact.test_check_contact">
+  <component name="RunManager" selected="Python tests.py.test for test_add_group.test_add_group">
     <configuration name="Unnamed" type="tests" factoryName="py.test">
       <module name="PythonBarancevHomeworks" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -248,6 +252,34 @@
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/contacts/debug_test.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <configuration name="py.test for test_add_contact.test_add_contact" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="PythonBarancevHomeworks" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/contacts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_add_contact.test_add_contact&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+    </configuration>
+    <configuration name="py.test for test_add_group.test_add_group" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="PythonBarancevHomeworks" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/groups" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_add_group.test_add_group&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
     <configuration name="py.test for test_check_contact.test_check_contact" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="PythonBarancevHomeworks" />
@@ -263,20 +295,6 @@
       <option name="_new_target" value="&quot;test_check_contact.test_check_contact&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="py.test for test_modify_group.test_modify_group" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="PythonBarancevHomeworks" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/groups" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_modify_group.test_modify_group&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-    </configuration>
     <configuration name="py.test for test_remove_contact.test_remove_contact" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="PythonBarancevHomeworks" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -289,20 +307,6 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_remove_contact.test_remove_contact&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-    </configuration>
-    <configuration name="py.test for test_remove_group.test_remove_group" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="PythonBarancevHomeworks" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/groups" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_remove_group.test_remove_group&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
     <configuration name="py.test in tests" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
@@ -321,19 +325,19 @@
     </configuration>
     <list>
       <item itemvalue="Python tests.Unnamed" />
-      <item itemvalue="Python tests.py.test for test_remove_group.test_remove_group" />
-      <item itemvalue="Python tests.py.test for test_modify_group.test_modify_group" />
       <item itemvalue="Python tests.py.test in tests" />
       <item itemvalue="Python tests.py.test for test_remove_contact.test_remove_contact" />
       <item itemvalue="Python tests.py.test for test_check_contact.test_check_contact" />
+      <item itemvalue="Python tests.py.test for test_add_contact.test_add_contact" />
+      <item itemvalue="Python tests.py.test for test_add_group.test_add_group" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.py.test for test_add_group.test_add_group" />
+        <item itemvalue="Python tests.py.test for test_add_contact.test_add_contact" />
         <item itemvalue="Python tests.py.test for test_check_contact.test_check_contact" />
         <item itemvalue="Python tests.py.test in tests" />
         <item itemvalue="Python tests.py.test for test_remove_contact.test_remove_contact" />
-        <item itemvalue="Python tests.py.test for test_modify_group.test_modify_group" />
-        <item itemvalue="Python tests.py.test for test_remove_group.test_remove_group" />
       </list>
     </recent_temporary>
   </component>
@@ -351,12 +355,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="py_test_for_test_check_contact_test_check_contact - 2019.02.09 at 21h 22m 42s.xml">
-      <configuration name="py.test for test_check_contact.test_check_contact" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_for_test_check_contact_test_check_contact - 2019.02.09 at 21h 23m 17s.xml">
-      <configuration name="py.test for test_check_contact.test_check_contact" configurationId="tests" />
-    </history-entry>
     <history-entry file="py_test_for_test_check_contact_test_check_contact - 2019.02.09 at 21h 23m 50s.xml">
       <configuration name="py.test for test_check_contact.test_check_contact" configurationId="tests" />
     </history-entry>
@@ -380,6 +378,12 @@
     </history-entry>
     <history-entry file="py_test_for_test_check_contact_test_check_contact - 2019.02.09 at 21h 32m 23s.xml">
       <configuration name="py.test for test_check_contact.test_check_contact" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_for_test_add_contact_test_add_contact - 2019.02.09 at 21h 48m 10s.xml">
+      <configuration name="py.test for test_add_contact.test_add_contact" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_for_test_add_contact_test_add_contact - 2019.02.09 at 21h 48m 35s.xml">
+      <configuration name="py.test for test_add_contact.test_add_contact" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -698,30 +702,10 @@
     <entry file="file://$PROJECT_DIR$/tests/groups/test_remove_group.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/contacts/test_add_contact.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="32" />
-          <folding>
-            <element signature="e#24#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model/contacts.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="25" column="14" lean-forward="true" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -746,6 +730,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="79" selection-start-line="8" selection-start-column="79" selection-end-line="8" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/contacts/test_add_contact.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+          <folding>
+            <element signature="e#24#58#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

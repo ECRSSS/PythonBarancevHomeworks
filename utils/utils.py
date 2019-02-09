@@ -1,5 +1,12 @@
 from random import randrange
 from sys import maxsize
+import string
+import random
+
+
+def random_string(prefix, maxlen):
+    symbols = string.ascii_letters + string.digits + " "
+    return prefix + "".join([random.choice(symbols) for i in range(random.randrange(maxlen))])
 
 
 def list_sort(list):
@@ -21,8 +28,6 @@ def get_random_index_from_list(list_of_elements):
 
 
 def clear(string_to_clear):
-    import string
-
     class Del:
         def __init__(self, keep=string.digits):
             self.comp = dict((ord(c), c) for c in keep)
