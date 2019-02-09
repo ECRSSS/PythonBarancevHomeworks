@@ -18,3 +18,18 @@ def get_random_index_from_list(list_of_elements):
     else:
         index = randrange(len(list_of_elements))
     return index
+
+
+def clear(string_to_clear):
+    import string
+
+    class Del:
+        def __init__(self, keep=string.digits):
+            self.comp = dict((ord(c), c) for c in keep)
+
+        def __getitem__(self, k):
+            return self.comp.get(k)
+
+    d = Del()
+    x = str(string_to_clear)
+    return x.translate(d)

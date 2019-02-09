@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from model.contacts import Contact
+from utils.utils import clear
 
 
 class ContactsHelper:
@@ -34,9 +35,12 @@ class ContactsHelper:
         self.contacts_cache = None
 
     def modify_contact_by_num_on_page(self, contact, num):
-        self.wd.find_elements_by_xpath("//img[contains(@title,'Edit')]/..")[num].click()
+        self.to_edit_contact_by_num(num)
         self.type_contact(contact)
         self.update()
+
+    def to_edit_contact_by_num(self, num):
+        self.wd.find_elements_by_xpath("//img[contains(@title,'Edit')]/..")[num].click()
 
     def count(self):
         return len(self.wd.find_elements_by_name("selected[]"))
@@ -66,3 +70,25 @@ class ContactsHelper:
             return list(self.contacts_cache)
         else:
             return list(self.contacts_cache)
+
+    def get_info_from_main_page_by_num(self, num):
+        tds = self.wd.find_elements_by_xpath("//tr[@name='entry'][%s]/td" % str(num + 1))
+        last_name = tds[1].text
+        first_name = tds[2].text
+        address = tds[3].text
+        emails = tds[4].text.replace("\n", "")
+        phones = clear(tds[5].text.replace("\n", ""))
+        return last_name, first_name, address, emails, phones
+
+    def get_info_from_edit_page(self):
+        fields = self.wd.find_elements_by_xpath("//input")
+
+        def getval(elm):
+            return elm.get_attribute("value")
+
+        last_name = getval(fields[5])
+        first_name = getval(fields[3])
+        address = self.wd.find_element_by_xpath("//textarea[1]").text
+        emails = getval(fields[15]) + getval(fields[16]) + getval(fields[17])
+        phones = clear(getval(fields[11]) + getval(fields[12]) + getval(fields[13]) + getval(fields[21]))
+        return last_name, first_name, address, emails, phones
