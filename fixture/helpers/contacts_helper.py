@@ -62,7 +62,7 @@ class ContactsHelper:
                 elm_id = elm.find_element_by_css_selector("input").get_attribute("id")
                 elm_last_name = elm.find_element_by_css_selector("td:nth-child(2)").text
                 elm_first_name = elm.find_element_by_css_selector("td:nth-child(3)").text
-                self.contacts_cache.append(Contact(elm_first_name, "", elm_last_name, elm_id))
+                self.contacts_cache.append(Contact(elm_first_name, None, elm_last_name, elm_id))
             return list(self.contacts_cache)
         else:
             return list(self.contacts_cache)
