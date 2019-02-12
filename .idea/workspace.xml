@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44ad7dbc-a654-42e2-9dba-a15f247b1d9b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/application.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/contacts/test_check_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/contacts/test_check_contact.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,7 +13,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="conftest.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="conftest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conftest.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="561">
@@ -23,6 +21,15 @@
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_check_contact.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/contacts/test_check_contact.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -52,6 +59,18 @@
               <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contacts_helper.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/fixture/helpers/contacts_helper.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="73" column="8" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="8" />
+              <folding>
+                <element signature="e#24#58#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -98,12 +117,12 @@
         <option value="$PROJECT_DIR$/tests/contacts/test_modify_contact.py" />
         <option value="$PROJECT_DIR$/tests/contacts/test_remove_contact.py" />
         <option value="$PROJECT_DIR$/fixture/helpers/contacts_helper.py" />
-        <option value="$PROJECT_DIR$/tests/contacts/test_check_contact.py" />
         <option value="$PROJECT_DIR$/utils/utils.py" />
         <option value="$PROJECT_DIR$/tests/contacts/test_add_contact.py" />
         <option value="$PROJECT_DIR$/tests/groups/test_add_group.py" />
         <option value="$PROJECT_DIR$/fixture/application.py" />
         <option value="$PROJECT_DIR$/conftest.py" />
+        <option value="$PROJECT_DIR$/tests/contacts/test_check_contact.py" />
       </list>
     </option>
   </component>
@@ -195,7 +214,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.py.test for test_add_group.test_add_group">
+  <component name="RunManager" selected="Python tests.py.test for test_check_contact.test_check_contact">
     <configuration name="Unnamed" type="tests" factoryName="py.test">
       <module name="PythonBarancevHomeworks" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -290,9 +309,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.py.test for test_check_contact.test_check_contact" />
         <item itemvalue="Python tests.py.test for test_add_group.test_add_group" />
         <item itemvalue="Python tests.py.test for test_add_contact.test_add_contact" />
-        <item itemvalue="Python tests.py.test for test_check_contact.test_check_contact" />
         <item itemvalue="Python tests.py.test in tests" />
         <item itemvalue="Python tests.py.test for test_remove_contact.test_remove_contact" />
       </list>
@@ -312,9 +331,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="py_test_for_test_add_group_test_add_group - 2019.02.10 at 10h 21m 18s.xml">
-      <configuration name="py.test for test_add_group.test_add_group" configurationId="tests" />
-    </history-entry>
     <history-entry file="py_test_for_test_add_group_test_add_group - 2019.02.10 at 10h 22m 04s.xml">
       <configuration name="py.test for test_add_group.test_add_group" configurationId="tests" />
     </history-entry>
@@ -341,6 +357,9 @@
     </history-entry>
     <history-entry file="py_test_for_test_add_group_test_add_group - 2019.02.10 at 10h 34m 26s.xml">
       <configuration name="py.test for test_add_group.test_add_group" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_for_test_check_contact_test_check_contact - 2019.02.12 at 13h 25m 25s.xml">
+      <configuration name="py.test for test_check_contact.test_check_contact" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -609,27 +628,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fixture/helpers/contacts_helper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="93" column="61" selection-start-line="93" selection-start-column="61" selection-end-line="93" selection-end-column="61" />
-          <folding>
-            <element signature="e#24#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/contacts/test_modify_contact.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="9" selection-start-line="9" selection-end-line="10" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/contacts/test_check_contact.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="79" selection-start-line="8" selection-start-column="79" selection-end-line="8" selection-end-column="79" />
         </state>
       </provider>
     </entry>
@@ -718,6 +720,23 @@
           <caret line="38" column="83" lean-forward="true" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="83" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/contacts/test_check_contact.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixture/helpers/contacts_helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="73" column="8" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="8" />
+          <folding>
+            <element signature="e#24#58#0" expanded="true" />
           </folding>
         </state>
       </provider>
