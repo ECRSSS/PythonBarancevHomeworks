@@ -10,7 +10,7 @@ testdata = [
 ]
 
 
-@pytest.mark.parametrize("adding_group", testdata)
+@pytest.mark.parametrize("adding_group", testdata, ids=[repr(x) for x in testdata])
 def test_add_group(app, adding_group):
     app.navigation.to_groups()
     old_groups = app.groups.get_groups()
