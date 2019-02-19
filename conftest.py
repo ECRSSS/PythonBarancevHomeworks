@@ -1,4 +1,5 @@
 import pytest
+import json
 
 from fixture.application import Application
 
@@ -8,17 +9,18 @@ fixture = None
 @pytest.fixture
 def app(request):
     global fixture
-    url = request.config.getoption("--url")
+    with open(request.config.getoption("--target")) as config:
+        target = json.load(config)
     if fixture is None:
         browser = request.config.getoption("--browser")
         fixture = Application(browser)
-        fixture.open(url)
+        fixture.open(target["url"])
     else:
         if not fixture.is_valid():
             browser = request.config.getoption("--browser")
             fixture = Application(browser)
-            fixture.open(url)
-    fixture.session.ensure_login("admin", "secret")
+            fixture.open(target["url"])
+    fixture.session.ensure_login(target["username"], target["password"])
     return fixture
 
 
@@ -37,5 +39,4 @@ def stop(request):
 def pytest_addoption(parser):
     parser.addoption("--browser", action="store", default="firefox", help="select browser")
     parser.addoption("--url", action="store", default="http://localhost/addressbook", help="type url")
-
-
+    parser.addoption("--target", action="store", default="target.json", help="config file")
