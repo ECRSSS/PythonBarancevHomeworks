@@ -1,16 +1,9 @@
 # -*- coding: utf-8 -*-
-from model.contacts import Contact
-from utils.utils import list_sort, random_string
-import pytest
-
-testdata = [
-    Contact(random_string("first", 20), random_string("middle", 20), random_string("last", 20), None)
-    for i in range(2)
-]
+from utils.utils import list_sort
 
 
-@pytest.mark.parametrize("contact", testdata, ids=[repr(x) for x in testdata])
-def test_add_contact(app, contact):
+def test_add_contact(app, data_contacts):
+    contact = data_contacts
     app.navigation.to_contacts()
     old_contacts = app.contacts.get_contacts()
     app.contacts.add_new_contact(contact)

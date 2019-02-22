@@ -2,6 +2,8 @@ import pytest
 import json
 
 from fixture.application import Application
+from generators.contacts_generator import get_contacts
+from generators.group_generator import get_groups
 
 fixture = None
 
@@ -39,4 +41,14 @@ def stop(request):
 def pytest_addoption(parser):
     parser.addoption("--browser", action="store", default="firefox", help="select browser")
     parser.addoption("--url", action="store", default="http://localhost/addressbook", help="type url")
-    parser.addoption("--target", action="store", default="target.json", help="config file")
+    parser.addoption("--target", action="store", default="../target.json", help="config file")
+
+
+def pytest_generate_tests(metafunc):
+    for fixture in metafunc.fixturenames:
+        if fixture.startswith("data_groups"):
+            testdata = get_groups()
+            metafunc.parametrize(fixture, testdata, ids=[str(x) for x in testdata])
+        if fixture.startswith("data_contacts"):
+            testdata = get_contacts()
+            metafunc.parametrize(fixture, testdata, ids=[str(x) for x in testdata])
