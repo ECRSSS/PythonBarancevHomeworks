@@ -2,6 +2,7 @@
 from selenium import webdriver
 
 from fixture.helpers.contacts_helper import ContactsHelper
+from fixture.helpers.db_helper import DBHelper
 from fixture.helpers.group_helper import GroupsHelper
 from fixture.helpers.navigation_helper import NavigationHelper
 from fixture.helpers.session_helper import SessionHelper
@@ -15,6 +16,7 @@ class Application:
         self.groups = GroupsHelper(self)
         self.contacts = ContactsHelper(self)
         self.navigation = NavigationHelper(self)
+        self.orm = DBHelper(host='127.0.0.1', user='root', password='')
 
     def select_browser(self, browser):
         if browser == "firefox":
@@ -22,7 +24,7 @@ class Application:
         elif browser == "ie":
             return webdriver.Ie()
         elif browser == "chrome":
-            return webdriver.Chrome()
+            return webdriver.Chrome("C:\Windows\SysWOW64\chromedriver.exe")
         else:
             raise Exception("передан неверный параметр")
 

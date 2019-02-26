@@ -2,13 +2,20 @@
 from utils.utils import list_sort
 
 
-def test_add_contact(app, data_contacts):
+def test_add_contact(app, data_contacts,check_ui):
     contact = data_contacts
     app.navigation.to_contacts()
-    old_contacts = app.contacts.get_contacts()
+    if check_ui:
+        old_contacts = app.contacts.get_contacts()
+    else:
+        old_contacts = app.orm.get_contacts_list()
+    len_old=len(old_contacts)
     app.contacts.add_new_contact(contact)
     app.navigation.to_contacts()
-    new_contacts = app.contacts.get_contacts()
-    assert len(new_contacts) == (len(old_contacts) + 1)
+    if check_ui:
+        new_contacts = app.contacts.get_contacts()
+    else:
+        new_contacts = app.orm.get_contacts_list()
+    assert len(new_contacts) == (len_old + 1)
     old_contacts.append(contact)
     assert list_sort(new_contacts) == list_sort(old_contacts)

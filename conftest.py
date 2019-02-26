@@ -11,7 +11,8 @@ fixture = None
 @pytest.fixture
 def app(request):
     global fixture
-    with open(request.config.getoption("--target")) as config:
+    path = request.config.getoption("--target")
+    with open(path) as config:
         target = json.load(config)
     if fixture is None:
         browser = request.config.getoption("--browser")
@@ -24,6 +25,11 @@ def app(request):
             fixture.open(target["url"])
     fixture.session.ensure_login(target["username"], target["password"])
     return fixture
+
+
+@pytest.fixture
+def check_ui(request):
+    return request.config.getoption("--check_ui")
 
 
 @pytest.fixture(scope="session", autouse=True)
@@ -39,9 +45,11 @@ def stop(request):
 
 
 def pytest_addoption(parser):
-    parser.addoption("--browser", action="store", default="firefox", help="select browser")
+    parser.addoption("--browser", action="store", default="chrome", help="select browser")
+    parser.addoption("--check_ui", action="store_true")
     parser.addoption("--url", action="store", default="http://localhost/addressbook", help="type url")
-    parser.addoption("--target", action="store", default="../target.json", help="config file")
+    parser.addoption("--target", action="store",
+                     default="C:/Users/Cats/Documents/GitHub/PythonBarancevHomeworks/target.json", help="config file")
 
 
 def pytest_generate_tests(metafunc):
