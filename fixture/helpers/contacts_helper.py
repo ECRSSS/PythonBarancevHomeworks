@@ -80,6 +80,14 @@ class ContactsHelper:
         phones = clear(tds[5].text.replace("\n", ""))
         return last_name, first_name, address, emails, phones
 
+    def get_info_from_main_page_list(self):
+        trs = self.wd.find_elements_by_xpath("//tr[@name='entry']")
+        entities = list()
+        for n in range(len(trs)):
+            entities.append(list(self.get_info_from_main_page_by_num(n)))
+        return entities
+
+
     def get_info_from_edit_page(self):
         fields = self.wd.find_elements_by_xpath("//input")
 
