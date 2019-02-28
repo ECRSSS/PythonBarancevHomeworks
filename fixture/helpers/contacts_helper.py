@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+from selenium.webdriver.support.select import Select
+
 from model.contacts import Contact
 from utils.utils import clear
 
@@ -7,6 +9,25 @@ class ContactsHelper:
     def __init__(self, app):
         self.app = app
         self.wd = app.wd
+
+    def select_group(self, id):
+        Select(self.wd.find_element_by_xpath("//select[@name='group']")).select_by_value(str(id))
+
+    def add_contact_to_group_by_index_and_get_group_id(self, index):
+        select = Select(self.wd.find_element_by_xpath("//select[@name='to_group']"))
+        select.select_by_index(index)
+        selected_value = select.first_selected_option.get_attribute('value')
+        self.wd.find_element_by_xpath("//input[@name='add']").click()
+        return selected_value
+
+    def select_contact_by_num_and_get_id(self, num):
+        contact = self.wd.find_element_by_xpath("//tr[" + str(num + 2) + "]//input[@name='selected[]']")
+        id = contact.get_attribute("id")
+        contact.click()
+        return id
+
+    def remove_from_group(self):
+        self.wd.find_element_by_xpath("//input[@name='remove']")
 
     def type_contact(self, contact):
         self.app.fill_field_by_name("firstname", contact.first_name)
@@ -86,7 +107,6 @@ class ContactsHelper:
         for n in range(len(trs)):
             entities.append(list(self.get_info_from_main_page_by_num(n)))
         return entities
-
 
     def get_info_from_edit_page(self):
         fields = self.wd.find_elements_by_xpath("//input")

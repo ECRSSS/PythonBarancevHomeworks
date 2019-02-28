@@ -16,6 +16,7 @@ class DBHelper:
         header = Optional(str, column='group_header')
         footer = Optional(str, column='group_footer')
         deprecated = Optional(datetime.datetime, column='deprecated')
+        contacts = Set(lambda: DBHelper.ORMContact, table='address_in_groups', column='id', reverse='groups', lazy=True)
 
     class ORMContact(db.Entity):
         _table_ = "addressbook"
@@ -24,6 +25,8 @@ class DBHelper:
         middle_name = Optional(str, column='middlename')
         last_name = Optional(str, column='lastname')
         deprecated = Optional(datetime.datetime, column='deprecated')
+        groups = Set(lambda: DBHelper.ORMGroup, table='address_in_groups', column='group_id', reverse='contacts',
+                     lazy=True)
 
     def __init__(self, host, user, password):
         self.db.bind(provider='mysql', database='addressbook', host=host, user=user, password=password)
@@ -36,6 +39,14 @@ class DBHelper:
         for group in entity_groups:
             groups.append(Group(group.name, group.header, group.footer, group.id))
         return groups
+
+    @db_session
+    def get_contacts_in_groups_list(self, group_id):
+        orm_group = list(select(g for g in DBHelper.ORMGroup if g.id == group_id))[0]
+        contacts = list()
+        for contact in orm_group.contacts:
+            contacts.append(Contact(contact.first_name, contact.middle_name, contact.last_name, contact.id))
+        return contacts
 
     @db_session
     def get_contacts_list(self):

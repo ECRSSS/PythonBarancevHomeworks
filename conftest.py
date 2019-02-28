@@ -45,11 +45,11 @@ def stop(request):
 
 
 def pytest_addoption(parser):
-    parser.addoption("--browser", action="store", default="chrome", help="select browser")
+    parser.addoption("--browser", action="store", default="firefox", help="select browser")
     parser.addoption("--check_ui", action="store_true")
     parser.addoption("--url", action="store", default="http://localhost/addressbook", help="type url")
     parser.addoption("--target", action="store",
-                     default="C:/Users/Cats/Documents/GitHub/PythonBarancevHomeworks/target.json", help="config file")
+                     default="C:/Users/nngle/Documents/GitHub/PythonBarancevHomeworks/target.json", help="config file")
 
 
 def pytest_generate_tests(metafunc):
