@@ -1,15 +1,13 @@
 # -*- coding: utf-8 -*-
-from utils.utils import get_random_index_from_list
+from model.contacts import Contact
 
 
 def test_check_contact(app):
     app.navigation.to_contacts()
-    old_contacts = app.contacts.get_info_from_main_page_list()
+    old_contacts = app.orm.get_contacts_list()
     for n in range(len(old_contacts)):
         app.contacts.to_edit_contact_by_num(n)
         ln1, fn1, ad1, em1, ph1 = app.contacts.get_info_from_edit_page()
+        contact = Contact(fn1, None, ln1, None)
         app.navigation.to_contacts()
-        ln2, fn2, ad2, em2, ph2 = old_contacts[n]
-        fs = "%s %s %s %s %s" % (ln1, fn1, ad1, em1, ph1)
-        ss = "%s %s %s %s %s" % (ln2, fn2, ad2, em2, ph2)
-        assert fs == ss
+        assert contact in old_contacts

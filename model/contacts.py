@@ -11,7 +11,7 @@ class Contact:
 
     def __eq__(self, o: object) -> bool:
         return (self.elm_id is None or o.elm_id is None or self.elm_id == o.elm_id) \
-               and self.middle_name == o.middle_name and self.first_name == o.first_name and self.last_name == o.last_name
+                and self.first_name == o.first_name and self.last_name == o.last_name
 
     def __repr__(self):
         return str(self.elm_id) + " " + str(self.first_name) + " " + str(self.middle_name) + " " + str(self.last_name)
