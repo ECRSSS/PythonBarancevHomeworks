@@ -120,3 +120,19 @@ class ContactsHelper:
         emails = getval(fields[15]) + getval(fields[16]) + getval(fields[17])
         phones = clear(getval(fields[11]) + getval(fields[12]) + getval(fields[13]) + getval(fields[21]))
         return last_name, first_name, address, emails, phones
+
+    def get_info_from_main_page_by_num_as_string(self, num):
+        tds = self.wd.find_elements_by_xpath("//tr[@name='entry'][%s]/td" % str(num + 1))
+        last_name = tds[1].text
+        first_name = tds[2].text
+        address = tds[3].text
+        emails = tds[4].text.replace("\n", "")
+        phones = clear(tds[5].text.replace("\n", ""))
+        return last_name + first_name + address + emails + phones
+
+    def get_info_from_main_page_as_strings_list(self):
+        trs = self.wd.find_elements_by_xpath("//tr[@name='entry']")
+        entities = list()
+        for n in range(len(trs)):
+            entities.append(str(self.get_info_from_main_page_by_num_as_string(n)))
+        return entities
